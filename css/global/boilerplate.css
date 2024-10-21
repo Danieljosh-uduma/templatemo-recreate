@@ -1,0 +1,26 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    border: none;
+}
+
+:root {
+    --main-color: #6dcaca;
+    --second-color: #569fb1;
+    --bg-color: #fff;
+
+    --text-color: #000;
+    --accent-text: #257979;
+    --gray: gray;
+
+    --h1: 3.6rem; 
+    --h2: 1.77rem;
+    --h3: 1.3rem;
+    --p: 1.1rem;
+    
+    --gradient: linear-gradient(90deg, var(--second-color), var(--main-color));
+}
