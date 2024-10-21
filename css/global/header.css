@@ -8,6 +8,7 @@
     padding: 20px 50px;
     background-image: var(--gradient);
     border-bottom: 1px solid #49ccc5;
+    z-index: 9999999;
 }
 
 /* logo  */
@@ -65,7 +66,7 @@ logo>img {
     color: var(--accent-text);
 }
 .page:hover svg {
-    fill: var(--second-color);
+    fill: var(--accent-bg);
 }
 .page p:hover ~ .pagelist{
     display: inline-block;
@@ -93,7 +94,7 @@ logo>img {
     transition: all 0.3s ease-in-out;
 }
 .icon:hover {
-    background-color: var(--accent-text);
+    background-color: var(--accent-bg);
     fill: var(--bg-color);
 }
 .menu {

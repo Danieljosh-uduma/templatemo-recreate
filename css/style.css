@@ -1,5 +1,6 @@
 @import url('global/boilerplate.css');
 @import url('global/header.css');
+@import url('global/card.css');
 
 
 /* hero section  */
@@ -58,11 +59,22 @@
     margin-top: 10px;
     margin-right: 10px;
     z-index: 2;
+    font-size: var(--h3);
+    color: var(--bg-color);
+    font-weight: 600;
     background-color: var(--main-color);
     transition: all 0.3s ease-in;
 }
 .search__button:hover {
-    background-color: var(--second-color);
+    background-color: var(--accent-bg);
+}
+.hero__info {
+    width: 100%;
+    height: 420px;
+    background-color: var(--accent-bg);
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    margin-bottom: 40px;
 }
 .hero__card {
     display: flex;
@@ -76,10 +88,6 @@
     align-items: center;
     z-index: 2;
 }
-.card {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.19), -2px -2px 30px rgba(0, 0, 0, 0.19);
-    border-radius: 20px;
-}
 .child1 {
     width: 40%;
     height: inherit;
@@ -89,8 +97,10 @@
 .child1 h2 {
     font-size: var(--h2);
     margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
 }
-.child1 p {
+ .child1 p {
     font-size: var(--h3);
     line-height: 2rem;
     color: var(--gray);
@@ -111,7 +121,7 @@
 .overlay {
     grid-column-start: 1;
     grid-row-start: 1;  
-    background-image: linear-gradient(45deg, var(--main-color), var(--second-color));
+    background-image: linear-gradient(-180deg, var(--main-color), var(--accent-bg));
     opacity: 0.79;
     border-radius: 20px;
     z-index: 1;
@@ -131,9 +141,72 @@
 .socials>ul {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .socials svg {
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     fill: var(--bg-color);
+    padding: 8px 8px;
+    margin: 0 8px;
+    align-self: center;
+    background-color: var(--main-color);
+    border-radius: 100%;
+    transition: all 0.5s ease-in;
+}
+.socials svg:hover {
+    background-color: var(--accent-text);
+}
+.main-child h2 {
+    font-size: var(--h2);
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+.main-child p {
+    font-size: 1.33rem;
+    line-height: 2rem;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.main-child>.learn-more a {
+    color: var(--bg-color);
+    padding: 16px 24px;
+    background-color: var(--main-color);
+    border-radius: 27px;
+    font-size: var(--h3);
+    font-weight: 600;
+}
+.main-child>.learn-more:hover a{
+    background-color: var(--accent-bg);
+}
+.main-child>.card__image {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
+    position: absolute;
+    bottom: 25px;
+} 
+.socials>span {
+    font-size: var(--h3);
+    align-self: center;
+    margin-right: 6px;
+}
+.bookmark>a svg{
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: all 0.3s ease;
+}
+.bookmark>a:hover svg {
+    fill: var(--second-color);
+}
+.hero__card .tag {
+    font-size: 14px;
+    background-color: #539cf0;
+    align-self: center;
+    padding: 6px 6px;
+    color: var(--bg-color);
+    border-radius: 2px;
 }

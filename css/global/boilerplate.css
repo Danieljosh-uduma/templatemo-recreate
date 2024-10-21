@@ -8,10 +8,12 @@
     border: none;
 }
 
+
 :root {
     --main-color: #6dcaca;
     --second-color: #569fb1;
     --bg-color: #fff;
+    --accent-bg: #377180;
 
     --text-color: #000;
     --accent-text: #257979;
