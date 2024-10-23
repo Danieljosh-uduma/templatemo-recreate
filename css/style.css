@@ -169,7 +169,7 @@
     font-weight: 100;
     margin-bottom: 20px;
 }
-.main-child>.learn-more a {
+.learn-more a {
     color: var(--bg-color);
     padding: 16px 24px;
     background-color: var(--main-color);
@@ -177,7 +177,7 @@
     font-size: var(--h3);
     font-weight: 600;
 }
-.main-child>.learn-more:hover a{
+.learn-more:hover a{
     background-color: var(--accent-bg);
 }
 .main-child>.card__image {
@@ -202,11 +202,68 @@
 .bookmark>a:hover svg {
     fill: var(--second-color);
 }
-.hero__card .tag {
+.tag {
     font-size: 14px;
     background-color: #539cf0;
     align-self: center;
     padding: 6px 6px;
     color: var(--bg-color);
     border-radius: 2px;
+}
+
+/* discover section  */
+.discover {
+    margin-top: 100px;
+}
+.discover h2 {
+    font-size: var(--h2-big);
+    text-align: center;
+    font-weight: 700;
+}
+.discover__list {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: inherit;
+    margin: 0 auto;
+    align-items: center;
+}
+.discover__list>li {
+    position: relative;
+    height: inherit;
+    padding: 0 20px;
+    font-size: var(--h3);
+    font-weight: 100;
+    color: var(--gray);
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.active-item {
+    color: var(--text-color) !important;
+    border-bottom: 1px solid var(--text-color);
+}
+.discover__list>li:hover {
+    color: var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+}
+.discover>div {
+    width: 100%;
+    height: 50px;
+    margin: 20px auto;
+    border-bottom: 0.8px solid var(--main-color);
+}
+.discover__list-items {
+    position: absolute;
+    top: 100px;
+    left: -200px;
+    width: 1080px;
+}
+.discover__list-items>ul {
+    display: flex;
+    justify-content: space-between;
+}
+.discover__list-items>ul>li {
+    width: min(30%, 100%);
+    height: auto;
+    margin-bottom: 150px;
 }

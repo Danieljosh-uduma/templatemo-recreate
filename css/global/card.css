@@ -1,3 +1,5 @@
+@import url('boilerplate.css');
+
 
 .card {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.19), -2px -2px 30px rgba(0, 0, 0, 0.19);
@@ -6,4 +8,67 @@
 }
 .card:hover {
     transform: translate(0, -2px);
+}
+.card-item {
+    padding: 20px;
+}
+.card-item h3 {
+    font-size: var(--h3);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.card-item p {
+    font-size: var(--h3);
+    line-height: 1.5rem;
+    color: var(--gray);
+    font-weight: var(--p);
+    width: 90%;
+}
+.card-item>.learn-more {
+    margin: 50px 0 70px 0;
+}
+.card-item>.bookmark {
+    right: 0 !important;
+}
+.card-item img {
+    width: 100%;
+    height: 180px;
+    margin-top: 30px;
+}
+#first-card>div {
+    display: none !important;
+}
+.market {
+    left: -330px !important;
+}
+.market-tag {
+    background-color: #f73131 !important;
+}
+.music {
+    left: -600px !important;
+}
+.music-tag {
+    background-color: #ee9b02 !important;
+}
+.discover__list-items>ul>.new {
+    width: min(48%, 100%);
+    height: auto;
+    margin-bottom: 150px;
+}
+.finance {
+    left: -480px !important;
+}
+.gradient {
+    background-image: var(--gradient-2);
+    color:  var(--bg-color);
+}
+.gradient p {
+    color: var(--bg-color);
+}
+.education {
+    left: -800px !important;
+}
+.education-tag {
+    background-color: #0b923f !important;
 }
