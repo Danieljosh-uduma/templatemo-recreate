@@ -267,3 +267,106 @@
     height: auto;
     margin-bottom: 150px;
 }
+
+
+/* how does it works */
+.more-info {
+    display: grid;
+    margin-top: 80vh;
+    margin-bottom: 200px;
+    width: 100%;
+    height: 200vh;
+    background-image: url('/images/colleagues-working-cozy-office-medium-shot.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.overlay-more {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    background-image: linear-gradient(-180deg, var(--second-color), var(--accent-bg));
+    opacity: 0.6;
+    z-index: 1;
+}
+.more-info__items {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    z-index: 2;
+    padding: 50px;
+    color: var(--bg-color);
+}
+.more-info__items>h2 {
+    font-size: var(--h2-big);
+    text-align: center;
+    color: var(--bg-color);
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+.more-info__items>ul>li {
+    display: flex;
+    margin-bottom: 80px;
+    position: relative;
+    /* align-items: baseline; */
+}
+.more-info__items>ul {
+    width: 80%;
+    margin: 20px auto;
+}
+.more-info__items>ul h2 {
+    font-size: var(--h2);
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 15px;
+}
+.more-info__items>ul>li svg {
+    fill: var(--bg-color);
+    width: 70px;
+    height: 70px;
+    padding: 15px;
+    margin-right: 40px;
+    background-color: var(--main-color);
+    border-radius: 100%;
+    border: 4px solid var(--bg-color);
+    outline: 10px solid var(--main-color);
+    align-self: self-start;
+}
+.more-info__items>ul>li .svg::after {
+    content: '';
+    position: absolute;
+    left: 32px;
+    top: 80px;
+    height: 100%;
+    background-color: var(--main-color);
+    width: 8px;
+    /* border: 4px solid black; */
+}
+.more-info__items>ul>li p {
+    font-size: var(--h3);
+    line-height: var(--h2-big);
+    font-weight: 400;
+}
+.none::after {
+    display: none;
+}
+.more-info__footer {
+    display: flex;
+    gap: 15px;
+    width: 60%;
+    margin-top: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10%;
+}
+.more-info__footer p {
+    font-size: var(--h3)
+}
+.more-info__footer>div>.btn {
+    background-color: transparent !important;
+    border: 2px solid var(--main-color) !important;
+    padding: 9px 15px !important;
+    color: var(--main-color) !important;
+    transition: all 0.3s ease-in;
+}
+.more-info__footer>div>.btn:hover {
+    background-color: var(--main-color) !important;
+    color: var(--bg-color) !important;
+}
