@@ -273,7 +273,7 @@
 .more-info {
     display: grid;
     margin-top: 80vh;
-    margin-bottom: 200px;
+    margin-bottom: 80px;
     width: 100%;
     height: 200vh;
     background-image: url('/images/colleagues-working-cozy-office-medium-shot.jpg');
@@ -370,3 +370,77 @@
     background-color: var(--main-color) !important;
     color: var(--bg-color) !important;
 }
+
+/* faqs section  */
+.asked-question {
+    width: 100%;
+    height: auto;
+    padding: 0 100px;
+}
+.asked-question>h2 {
+    font-size: var(--h2-big);
+}
+.asked-question>div {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    margin: 20px auto 0 auto;
+    gap: 20px;
+}
+.faq-img {
+    width: 80%;
+    height: inherit;
+}
+.asked-question img {
+    width: 100%;
+    height: inherit;
+}
+.faq-main {
+    width: 100%;
+    height: inherit;
+    margin-top: 50px;
+}
+.faq-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: var(--h3);
+    color: var(--text-color);
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+.faq-heading-active {
+    background-color: var(--gray);
+    color: var(--bg-color);
+    padding: 10px 15px !important;
+    margin-bottom: 30px !important;
+}
+.faq-heading:active {
+    border: 4px solid var(--gray);
+}
+.faq-heading svg {
+    fill: var(--gray);
+    width: 2rem;
+    height: 2rem;
+}
+.faq-heading .svg-active {
+    fill: var(--bg-color);
+    width: 2rem;
+    height: 2rem;
+}
+cite {
+    color: red;
+}
+.faq-main p {
+    display: none;
+    padding: 0 15px;
+    font-size: var(--p);
+    line-height: var(--h2-big);
+    margin-bottom: 15px;
+}
+.faq-main .p-active {
+    display: block;
+}
+
