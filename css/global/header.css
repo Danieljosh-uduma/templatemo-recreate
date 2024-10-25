@@ -102,3 +102,39 @@ logo>img {
     width: 3rem;
     height: 3rem;
 }
+
+@media (max-width: 992px) {
+    .header {
+        justify-content: space-between;
+    }
+    .navlist {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        background-color: var(--main-color);
+        top: 80px;
+        left: 0;
+    }
+    .navlist>ul {
+        display: block;
+        margin: 30px;
+    }
+    .navlist>ul a {
+        display: inline-block;
+        margin: 5px 0;
+    }
+    .pagelist {
+        display: block;
+        position: static;
+    }
+    .pagelist a {
+        margin: 0 !important;
+    }
+    .menu {
+        display: inline-flex;
+    }
+    body {
+        --h1: 3.2rem;
+    }
+}
